@@ -1,0 +1,32 @@
+server:
+  port: 9090
+
+logging:
+  level:
+    .: info
+    com.hazelcast: DEBUG
+    org.springframework.data.hazelcast.repository: DEBUG
+    
+---
+
+spring:
+  profiles: hazelfirst
+server:
+  email: info@alessandrovitale.it
+  port: 8080
+
+---
+
+spring:
+  profiles: hazelsecond
+server:
+  email: info@alessandrovitale.it
+  port: 8081
+  
+---
+
+spring:
+  profiles: hazelthird
+server:
+  email: info@alessandrovitale.it
+  port: 8082
