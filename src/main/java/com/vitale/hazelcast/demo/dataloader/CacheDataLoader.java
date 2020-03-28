@@ -26,11 +26,11 @@ public class CacheDataLoader {
 	CountryRepository countryRepository;
 
 	@PostConstruct
-	public void loadDataToHazleCast() throws Exception{
+	public void loadDataToHazelCast() throws Exception{
 		IMap map = hazelcastInstance.getMap("mymap");
 		map.put("1000","value");
 		map.put("2000","othervalue");
-		System.err.println("******** DATA LOADED TO HAZLECAST **********");
+		System.err.println("******** DATA LOADED TO HAZELCAST **********");
 
 		cityRepository.save(new City.Builder().withCountry("Italy").withName("Rome").withPopulation(5434000L).build());
 		cityRepository.save(new City.Builder().withCountry("Italy").withName("Venice").withPopulation(1334000L).build());
