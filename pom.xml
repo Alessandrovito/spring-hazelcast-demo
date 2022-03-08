@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <querydsl.version>4.2.2</querydsl.version>
-     	<hazelcast.version>3.12.5</hazelcast.version>
+     	<hazelcast.version>5.1</hazelcast.version>
     </properties>
 
     <dependencies>
